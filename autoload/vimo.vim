@@ -1,5 +1,5 @@
 function! vimo#Monologue()
-  if !s:s:checkVimoAvailability()
+  if !s:checkVimoAvailability()
     return
   endif
 
