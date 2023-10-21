@@ -3,7 +3,7 @@ function! vimo#Monologue()
     return
   endif
 
-  let user_input = input("Enter your monologue: ")
+  let user_input = input(printf("Enter your monologue: "), "",)
   if user_input != ''
     let cmd = "vimo -m ".shellescape(user_input)
     call system(cmd)
