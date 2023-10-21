@@ -8,7 +8,7 @@ function! VimoCheckVimoAvailability()
   endif
 endfunction
 
-function! VimoMonologue()
+function! vimo#VimoMonologue()
   if !CheckVimoAvailability()
     return
   endif
