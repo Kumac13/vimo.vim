@@ -4,9 +4,13 @@ function! vimo#Monologue()
   endif
 
   let user_input = input("Enter your monologue: ")
-  let cmd = "vimo -m ".shellescape(user_input)
-  call system(cmd)
-  echo "Sent to vimo!"
+  if user_input != ''
+    let cmd = "vimo -m ".shellescape(user_input)
+    call system(cmd)
+    echo "\nSent to vimo!"
+  else
+    return
+  endif
 endfunction
 
 function! s:checkVimoAvailability()
