@@ -1,0 +1,1 @@
+command! VimoMonologue call VimoMonologue()
