@@ -1,1 +1,1 @@
-command! VimoMonologue call vimo#VimoMonologue()
+command! VimoMonologue call vimo#Monologue()
