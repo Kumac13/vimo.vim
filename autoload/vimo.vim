@@ -14,11 +14,9 @@ function! vimo#Monologue()
 endfunction
 
 function! s:checkVimoAvailability()
-  let result = system('vimo')
-  if v:shell_error
-    echo "vimo not found!"
-    return 0
-  else
+  if executable('vimo')
     return 1
+  else
+    return 0
   endif
 endfunction
