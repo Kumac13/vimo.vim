@@ -5,7 +5,7 @@ function! vimo#Monologue()
 
   let user_input = input(printf("Enter your monologue: "), "",)
   if user_input != ''
-    let cmd = "vimo -m ".shellescape(user_input)
+    let cmd = "vimo local monologue -m ".shellescape(user_input)
     call system(cmd)
     echo "\nSent to vimo!"
   else
@@ -14,7 +14,7 @@ function! vimo#Monologue()
 endfunction
 
 function! s:checkVimoAvailability()
-  if executable('vimo')
+  if executable('vimobox')
     return 1
   else
     return 0
