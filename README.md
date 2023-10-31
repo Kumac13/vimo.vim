@@ -1,9 +1,9 @@
 # vimo.vim
 
-Vim plugin for [vimo](https://github.com/Kumac13/vimo)
+Vim plugin for [vimobox](https://github.com/Kumac13/vimobox)
 
 # Requirement
-- [vimo](https://github.com/Kumac13/vimo)
+- [vimobox](https://github.com/Kumac13/vimobox)
 
 # Installation
 ```vim
