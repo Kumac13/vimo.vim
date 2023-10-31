@@ -5,7 +5,7 @@ function! vimo#Monologue()
 
   let user_input = input(printf("Enter your monologue: "), "",)
   if user_input != ''
-    let cmd = "vimo local monologue -m ".shellescape(user_input)
+    let cmd = "vimobox local monologue -m ".shellescape(user_input)
     call system(cmd)
     echo "\nSent to vimo!"
   else
