@@ -4,3 +4,4 @@ endif
 let g:loaded_sfvim = 1
 
 command! VimoMonologue call vimo#Monologue()
+command! VimoList call vimo#List()
