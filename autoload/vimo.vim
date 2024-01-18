@@ -19,7 +19,7 @@ function! vimo#List()
   endif
 
   let cmd = "vimobox local list"
-  let result = json_decode(system(cmd))
+  let result = system(cmd)
 
   call s:open_list(result)
 endfunction
