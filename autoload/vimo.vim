@@ -19,10 +19,15 @@ function! vimo#List()
   endif
 
   let cmd = "vimobox local list"
-  let result = system(cmd)
+  let results = split(system(cmd), '\n')
 
-  call s:open_list(result)
+  call vimo#open_list(results)
 endfunction
+
+function! Debug() abort
+  call vimo#List()
+endfunction
+
 
 function! s:checkVimoAvailability()
   if executable('vimobox')
@@ -34,7 +39,7 @@ endfunction
 
 let s:buffer_name = 'monologue list//'
 
-function! util#open_list(list) abort
+function! vimo#open_list(list) abort
   " if buffer exists
   if bufexists(s:buffer_name)
     " if buffer display in window
