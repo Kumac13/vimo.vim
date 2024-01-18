@@ -24,11 +24,6 @@ function! vimo#List()
   call vimo#open_list(results)
 endfunction
 
-function! Debug() abort
-  call vimo#List()
-endfunction
-
-
 function! s:checkVimoAvailability()
   if executable('vimobox')
     return 1
